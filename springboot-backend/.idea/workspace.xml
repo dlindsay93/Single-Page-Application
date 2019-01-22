@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3f3759a6-833c-452a-9a68-de77a4928e95" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/controller/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/controller/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/mocked_data/BlogMockedData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/mocked_data/BlogMockedData.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,13 +29,12 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/backend/controller/BlogController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="63">
+              <caret line="3" column="22" selection-start-line="3" selection-end-line="3" selection-end-column="28" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#287#288#0" expanded="true" />
                 <element signature="e#337#338#0" expanded="true" />
               </folding>
@@ -48,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/backend/service/Blog.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="21">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
               <folding>
                 <element signature="e#322#323#0" expanded="true" />
                 <element signature="e#347#348#0" expanded="true" />
@@ -67,15 +65,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/backend/mocked_data/BlogMockedData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="216">
+              <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2686#2687#0" expanded="true" />
                 <element signature="e#2714#2715#0" expanded="true" />
+                <element signature="e#3057#3063#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,10 +121,10 @@
         <option value="$PROJECT_DIR$/src/main/java/backend/mockeddata/MockedData.java" />
         <option value="$PROJECT_DIR$/src/main/java/backend/mockeddata/BlogMockedData.java" />
         <option value="$PROJECT_DIR$/src/main/java/backend/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/backend/mocked_data/BlogMockedData.java" />
         <option value="$PROJECT_DIR$/src/main/java/backend/controller/BlogController.java" />
         <option value="$PROJECT_DIR$/src/main/java/backend/service/Blog.java" />
         <option value="$PROJECT_DIR$/src/main/java/backend/controller/Blog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/backend/mocked_data/BlogMockedData.java" />
       </list>
     </option>
   </component>
@@ -199,15 +198,6 @@
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="mocked_data" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="springboot-backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -217,7 +207,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548199869276" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548200699416" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
   </component>
   <component name="RecentsManager">
@@ -309,10 +299,10 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" visible="true" weight="0.3295583" />
+      <window_info anchor="bottom" id="Messages" weight="0.3295583" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295583" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3295583" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3295583" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997735" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -414,22 +404,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/backend/mocked_data/BlogMockedData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2686#2687#0" expanded="true" />
-            <element signature="e#2714#2715#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/backend/service/Blog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="e#322#323#0" expanded="true" />
             <element signature="e#347#348#0" expanded="true" />
@@ -449,12 +427,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/backend/controller/BlogController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="63">
+          <caret line="3" column="22" selection-start-line="3" selection-end-line="3" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#287#288#0" expanded="true" />
             <element signature="e#337#338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/backend/mocked_data/BlogMockedData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2686#2687#0" expanded="true" />
+            <element signature="e#2714#2715#0" expanded="true" />
+            <element signature="e#3057#3063#0" expanded="true" />
           </folding>
         </state>
       </provider>
