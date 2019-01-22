@@ -3,15 +3,15 @@
 <form>
   <fieldset>
     <span class="star-cb-group">
-      <input type="radio" id="rating-5" name="rating" (change) = inputRating(5) /><label for="rating-5">5</label>
-      <input type="radio" id="rating-4" name="rating" (change) = inputRating(4) /><label for="rating-4">4</label>
-      <input type="radio" id="rating-3" name="rating" (change) = inputRating(3) /><label for="rating-3">3</label>
-      <input type="radio" id="rating-2" name="rating" (change) = inputRating(2) /><label for="rating-2">2</label>
-      <input type="radio" id="rating-1" name="rating" (change) = inputRating(1) /><label for="rating-1">1</label>
-      <input type="radio" id="rating-0" name="rating" (change) = 'inputRating("BAD")' /><label for="rating-0">0</label>
+      <input type="radio" id="rating-5" name="rating" (click)="updatedRating('AMAZING')"/><label for="rating-5">5</label>
+      <input type="radio" id="rating-4" name="rating" (click)="updatedRating('GOOD')"/><label for="rating-4">4</label>
+      <input type="radio" id="rating-3" name="rating" (click)="updatedRating('PASSABLE')"/><label for="rating-3">3</label>
+      <input type="radio" id="rating-2" name="rating" (click)="updatedRating('BAD')"/><label for="rating-2">2</label>
+      <input type="radio" id="rating-1" name="rating" (click)="updatedRating('VERY BAD')"/><label for="rating-1">1</label>
+      <input type="radio" id="rating-0" name="rating" (click)="updatedRating('TERRIBLE')" /><label for="rating-0">0</label>
     </span>
     <div>
-      {{displayRating}}
+      {{showRating}}
     </div>
-  </fieldset>
+    </fieldset>
 </form>
