@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Installing anglular dev package
+
+The command ng serve may not work upon cloning this repo. In order to fix this issue use the command `npm install @angular-devkit/build-angular`. This should resolve the build issue and allow you to run the web app through your local browser.
