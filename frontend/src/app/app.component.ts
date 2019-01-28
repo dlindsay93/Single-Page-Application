@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+
 
 @Component({
   selector: 'app-root',
@@ -7,32 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  constructor() { }
+  messageForm: FormGroup;
+  submitted = false;
+  success = false;
 
-  ngOnInit() {}
-
-  userRating: string;
-  showRating: string = "";
-
-  // ratingClass(){
-  //   switch(this.userRating){
-  //       case 'TERRIBLE':
-  //         return this.userRating = 'TERRIBLE';
-  //       case 'VERY BAD':
-  //         return this.userRating = 'VERY BAD';
-  //       case 'BAD':
-  //         return this.userRating = 'BAD';
-  //       case 'PASSABLE':
-  //         return this.userRating = 'PASSABLE';
-  //       case 'GOOD':
-  //         return this.userRating = 'GOOD';
-  //       case 'AMAZING':
-  //         return this.userRating = 'AMAZING';
-  //
-  //     }
-  //   }
-  updatedRating(rating: string){
-    return console.log(rating);
-    this.showRating = rating;
+  constructor(private formBuilder: FormBuilder) {
+    this.messageForm = this.formBuilder.group({
+      name: ['',Validators.required],
+      message:['',Validators.required]
+    })
   }
+onSubmit(){
+  this.submitted = true;
+
+  if (this.messageForm.invalid){
+    return console.log( 'Invalid')
+  }
+
+  this.success = true;
+}
+
+  ngOnInit() {
+  }
+
 }
