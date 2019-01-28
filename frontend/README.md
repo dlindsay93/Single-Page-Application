@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Installing anglular dev package
 
-The command ng serve may not work upon cloning this repo. In order to fix this issue use the command `npm install @angular-devkit/build-angular`. This should resolve the build issue and allow you to run the web app through your local browser.
+The command ng serve may not work upon cloning this repo. In order to fix this issue use the command `npm install --save-dev @angular-devkit/build-angular` or `yarn add @angular-devkit/build-angular --dev` . This should resolve the build issue and allow you to run the web app through your local browser.
