@@ -1,35 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { HttpClient }    from '@angular/common/http';
+import { Observable } from 'rxjs';
 
-
-@Component({
+ @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
 
-  messageForm: FormGroup;
-  submitted = false;
-  success = false;
+  blogs =[{id:1, title:"Title1", content:"Content1"},
+          {id:2, title:"Title2", content:"Content2"}]
 
-  constructor(private formBuilder: FormBuilder) {
-    this.messageForm = this.formBuilder.group({
-      name: ['',Validators.required],
-      message:['',Validators.required]
-    })
-  }
-onSubmit(){
-  this.submitted = true;
+  title = 'frontend';
 
-  if (this.messageForm.invalid){
-    return console.log( 'Invalid')
+  constructor(private http: HttpClient){
+
   }
 
-  this.success = true;
-}
-
-  ngOnInit() {
+  ngOnInit(){
+    this.http.get("http://localhost:8080/blog").toPromise().then(Response = this.blogs);
   }
-
 }

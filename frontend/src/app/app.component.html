@@ -1,33 +1,5 @@
-<h1>Blog Post</h1>
-
-<form [formGroup]="messageForm">
-
-    <h5 *ngIf="success">Your blog was submitted!</h5>
-
-    <label>
-      Title:
-      <input type="text" formControlName="name">
-      <div *ngIf="submitted && messageForm.controls.name.errors" class="error">
-        <div *ngIf="messageForm.controls.name.errors.required">A title is required</div>
-      </div>
-    </label>
-
-    <label>
-    Blog:
-      <textarea formControlName="message"></textarea>
-      <div *ngIf="submitted && messageForm.controls.message.errors" class="error">
-        <div *ngIf="messageForm.controls.message.errors.required">A blog is required</div>
-      </div>
-    </label>
-
-    <input type="submit" value="Send message" class="cta">
-
-  </form>
-
-  <div *ngIf="submitted" class="results">
-    <strong>Name:</strong>
-    <span>{{ messageForm.controls.name.value }}</span>
-
-    <strong>Message:</strong>
-    <span>{{ messageForm.controls.message.value }}</span>
-  </div>
+<h1>Blogs</h1>
+<ol>
+  <li></li>
+  <li></li>
+</ol>
