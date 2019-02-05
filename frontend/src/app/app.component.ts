@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient }    from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs/Observable';
+import {Blogs} from './blogs';
+import {BlogService} from './app.servise';
 
  @Component({
   selector: 'app-root',
@@ -9,16 +11,12 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit {
 
-  blogs =[{id:1, title:"Title1", content:"Content1"},
-          {id:2, title:"Title2", content:"Content2"}]
+  public blogs = [];
 
-  title = 'frontend';
-
-  constructor(private http: HttpClient){
-
-  }
+  constructor(private blogService: BlogService){}
 
   ngOnInit(){
-    this.http.get("http://localhost:8080/blog").toPromise().then(Response = this.blogs);
+    this.blogService.getBlogs().subscribe(data => this.blogs = data);
   }
+
 }
