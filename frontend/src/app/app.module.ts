@@ -2,8 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule} from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
-
+import { HttpClientModule} from '@angular/common/http';
+import {Blogs} from './blogs';
+import {BlogService} from './blog.service';
 
 
 @NgModule({
@@ -12,15 +13,11 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    HttpClient,
+    HttpClientModule
+
   ],
-  providers: [],
+  providers: [BlogService],
   bootstrap: [AppComponent]
-}
+})
 
-
-export class AppModule {
-
-}
+export class AppModule {}

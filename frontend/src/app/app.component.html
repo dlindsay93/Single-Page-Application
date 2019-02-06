@@ -1,5 +1,4 @@
 <h1>Blogs</h1>
-<ol>
-  <li></li>
-  <li></li>
-</ol>
+<ul *ngFor = "let blog of blogs">
+  <li>{{blog.title}} {{blog.content}}}</li>
+</ul>
